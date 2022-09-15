@@ -10,6 +10,7 @@ GET {{api}}/count
 ### Busqueda de equipos
 GET {{api}}/0651a72e-2e94-4410-bcdd-509d8de48833
 
+### Crear un equipo
 POST {{api}}
 Content-Type: application/json
 

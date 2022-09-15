@@ -1,3 +1,9 @@
 {
-  "phones": []
+  "phones": [
+    {
+      "id": "5990cd4d-0e93-4096-a5cb-9991be2166fa",
+      "model": "Samsung S22",
+      "description": "HighClass Type SmartPhone"
+    }
+  ]
 }
