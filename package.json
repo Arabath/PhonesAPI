@@ -3,20 +3,31 @@
   "version": "1.0.0",
   "description": "\"apit-test-phones\"",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon ./src/server/  --ignore db.json"
+    "build": "tsc",
+    "dev:run": "NODE_ENV=development nodemon",
+    "dev": " npm run dev:run --ignore db.json",
+    "start": "node build/index.js"
   },
   "author": "AHobrecht",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.1",
-    "lowdb": "^1.0.0",
+    "lowdb": "1.0.0",
     "lsof": "^0.1.0",
     "node-modules": "^0.0.1",
     "nodemon": "^2.0.19",
+    "ts-node": "^10.9.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "morgan": "^1.10.0"
+    "@types/express": "^4.17.14",
+    "@types/lowdb": "^1.0.11",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^18.7.18",
+    "@types/uuid": "^8.3.4",
+    "morgan": "^1.10.0",
+    "typescript": "^4.8.3"
   }
 }
