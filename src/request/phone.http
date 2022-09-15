@@ -1,0 +1,31 @@
+@api = http://localhost:4000/api/v1/phones
+
+### Todos los equipos
+GET {{api}}
+
+### Cantidad de equipos
+GET {{api}}/count
+###
+
+### Busqueda de equipos
+GET {{api}}/0651a72e-2e94-4410-bcdd-509d8de48833
+
+POST {{api}}
+Content-Type: application/json
+
+{
+    "model": "Samsung S22",
+    "description": "HighClass Type SmartPhone"
+}
+
+###
+PUT {{api}}/4ccf46ba-e679-4bb8-9273-19038e6203c8
+Content-Type: application/json
+
+{
+    "model": "Samsung S22",
+    "description": "HighClass Type SmartPhone"
+}
+
+###
+DELETE {{api}}/4ccf46ba-e679-4bb8-9273-19038e6203c8
